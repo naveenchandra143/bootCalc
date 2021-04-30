@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href = "style.css" rel ="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src = "script.js" defer></script>
+</head>
+<body class="m-0 p-0"><h1 class="text-center mt-3 bg-">Calculator</h1>
+    <div class ="container mt-4 justify-content-center align-items-center no-getters  " style="background-color:light-gray; width: 20rem; height: 25rem;">
+      <div class="row align-items-center justify-content-center no-gutters" style="height: 25rem;">
+        <div class = "d-block col-12" style="background-color:dimgray; color: blanchedalmond; height: 6rem;">
+            <div data-previous-operand class = "col-12 h-2" ></div>
+            <div data-current-operand class = "col-12 h-2" ></div>
+        </div>
+        <button data-all-clear class ="col-6  btn-lg btn-outline-light">AC</button>
+        <button data-delete class="col-3 btn-lg btn-outline-danger">DEL</button>
+        <button data-operation class="col-3 btn-lg btn-outline-warning" >÷</button>
+        <button data-number class="col-3 btn-lg k">1</button>
+        <button data-number class="col-3 btn-lg k">2</button>
+        <button data-number class="col-3 btn-lg k">3</button>
+        <button data-operation class="col-3 btn-lg btn-outline-primary">*</button>
+        <button data-number class="col-3 btn-lg k">4</button>
+        <button data-number class="col-3 btn-lg k">5</button>
+        <button data-number class="col-3 btn-lg k">6</button>
+        <button data-operation class="col-3 btn-lg btn-outline-secondary">+</button>
+        <button data-number class="col-3 btn-lg k">7</button>
+        <button data-number class="col-3 btn-lg k">8</button>
+        <button data-number class="col-3 btn-lg k">9</button>
+        <button data-operation class="col-3 btn-lg btn-outline-success">-</button>
+        <button data-number class="col-3 btn-lg">.</button>
+        <button data-number class="col-3 btn-lg k">0</button>
+        <button data-equals class ="col-6 btn-lg btn-outline-info">=</button>
+    </div>
+    </div> 
+    <style>
+         body{
+             overflow: hidden;
+             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+         }
+    button.k{
+        background-color: transparent !important;
+    }
+    button.k:hover{
+        color:brown !important;
+    } 
+    </style>
+</body>
+</html>
